@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background: #00e1ff;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00e1ff;
+    border-radius: 1rem;
+}
+
+body {
+    font-family: 'Oxanium';
+    color: #fff;
+    background: #161616;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  height: 100vh;
+  overflow: hidden;
+  max-height: 600px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../public/serverphoto.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+
+  .m-auto {
+      h1 {
+          text-shadow: 2px 2px #00000050;
+      }
+      h2 {
+        text-shadow: 2px 2px #00000050;
+      }
+      img {
+          filter: drop-shadow(1px 1px 20px #00e1ff)
+      }
+  }
+}
+
+//at
+
+.at-sekce {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.a-team {
+  margin: 30px auto;
+  max-width: 100%;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.member {
+  background-color: #141627;
+  box-shadow: 3px 5px 15px 5px #00000030;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 23px;
+  vertical-align: middle;
+  border-radius: 20px;
+  margin: 20px; 
+}
+
+.member img {
+  width: 88px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.member-rank {
+  padding: 6px;
+  margin: 4px auto;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center; 
+}
+
+//at
+
+.pravidla {
+  padding: -7px 0 100px 0;
+
+  .card {
+    box-shadow: 3px 5px 15px 5px #00000030;
+  }
+}
+
+.cara {
+    margin: 7px;
+	width: 260px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    .cursor-pointer {
+        cursor: pointer;
+    }
+    .dropdown:hover 
+    .dropdown-content {
+        display: block;
+    }
+}
+
+br {
+  user-select: none;
+}
+
+//footer
+
+
+.footer {
+	h3 {
+		color: white;
+		font-weight: normal;
+		margin-bottom: 2px;
+	}
+}
+.odkaz {
+	p {
+		color: #a09f9f;
+	}
+
+}
+  .odkazy {
+  hr {
+    height: 90px;
+    border: 2px solid #1f2035;
+	}	
+  justify-content: space-evenly;
+	margin: 0px auto;
+	align-items: center;
+	vertical-align: middle;
+	max-width: 1650px;
+}
+//footer
